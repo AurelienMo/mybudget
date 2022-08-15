@@ -2,3 +2,9 @@ actions:
     resource: ../src/UI/Actions/
     type: attribute
     prefix: /api
+
+api_login_check:
+    path: /api/login_check
+
+api_refresh_token:
+    path: /api/token/refresh
