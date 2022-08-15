@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<doctrine-mapping xmlns="http://doctrine-project.org/schemas/orm/doctrine-mapping"
+                  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                  xsi:schemaLocation="http://doctrine-project.org/schemas/orm/doctrine-mapping
+    http://doctrine-project.org/schemas/orm/doctrine-mapping.xsd">
+
+    <entity name="MyBudget\Domain\Entity\User\Account" table="account">
+        <id name="id" column="id" type="uuid">
+            <generator strategy="NONE" />
+        </id>
+        <field name="email" column="email" />
+        <field name="roles" column="roles" type="array"/>
+        <field name="lastname" column="lastname" nullable="true"/>
+        <field name="firstname" column="firstname" nullable="true"/>
+        <field name="createdAt" column="created_at" type="datetime_immutable" nullable="true"/>
+        <field name="updatedAt" column="updated_at" type="datetime_immutable" nullable="true"/>
+        <field name="oidcIdentifier" column="oidc_identifier" />
+    </entity>
+</doctrine-mapping>

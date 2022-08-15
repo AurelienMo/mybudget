@@ -1,3 +1,4 @@
 actions:
     resource: ../src/UI/Actions/
     type: attribute
+    prefix: /api

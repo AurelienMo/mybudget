@@ -1,6 +1,6 @@
 <?php
 
-namespace MyBudget;
+namespace MyBudget\Infrastructure;
 
 use Symfony\Bundle\FrameworkBundle\Kernel\MicroKernelTrait;
 use Symfony\Component\HttpKernel\Kernel as BaseKernel;
